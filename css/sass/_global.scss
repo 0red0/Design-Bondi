@@ -1,3 +1,27 @@
 body {
+   // font-family: serif;
    font-family: "Roboto", sans-serif;
+}
+//BUTTONS
+.main-btn {
+   background-color: $red-color;
+   color: $yellow-color;
+   padding: 0.5rem 2rem;
+   &:hover {
+      background-color: #fc1033;
+      color: $yellow-color;
+   }
+}
+//COMPONENT
+.main-title {
+   &:after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 2px;
+      background-color: $green-color;
+      bottom: -12px;
+      left: 50%;
+      transform: translate(-50%);
+   }
 }

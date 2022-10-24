@@ -1,0 +1,28 @@
+.landing {
+   background-color: $dark-color;
+   min-height: calc(100vh - 72px);
+   h1 {
+      font-size: 3.5rem;
+   }
+}
+.features {
+   .icon-holder {
+      height: 200px;
+      svg {
+         left: 50%;
+         transform: translate(-50%);
+      }
+      .number {
+         font-size: 12rem;
+         color: $section-color;
+      }
+      .icon {
+         color: $green-color;
+      }
+   }
+   .feat {
+      h4 {
+         color: $yellow-color;
+      }
+   }
+}

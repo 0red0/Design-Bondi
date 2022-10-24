@@ -1,0 +1,39 @@
+.our-work {
+   background-color: $section-color;
+   ul {
+      .active {
+         background-color: $red-color;
+         color: $yellow-color;
+      }
+      li {
+         padding: 0.5rem 2rem;
+         cursor: pointer;
+         &:not(.active):hover {
+            color: $red-color;
+         }
+      }
+   }
+   .box {
+      padding: 5px;
+      overflow: hidden;
+      position: relative;
+      &:before {
+         content: attr(data-work);
+         position: absolute;
+         background-color: #33d1cc70;
+         width: calc(100% - 10px);
+         height: calc(100% - 10px);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-weight: bold;
+         color: #fff;
+         transition: 0.3s;
+         font-size: 1.5rem;
+         transform: translateX(calc(-100% - 5px));
+      }
+      &:hover::before {
+         transform: translateX(0);
+      }
+   }
+}

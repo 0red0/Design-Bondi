@@ -2,6 +2,27 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.main-btn {
+  background-color: #ff3150;
+  color: #ffc400;
+  padding: 0.5rem 2rem;
+}
+.main-btn:hover {
+  background-color: #fc1033;
+  color: #ffc400;
+}
+
+.main-title:after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .navbar {
   background-color: #19283f;
 }
@@ -28,4 +49,68 @@ body {
 .navbar .navbar-toggler[aria-expanded=true] {
   box-shadow: 0 0 0 0.25rem #33d1cc;
   border-color: #33d1cc;
+}
+
+.landing {
+  background-color: #19283f;
+  min-height: calc(100vh - 72px);
+}
+.landing h1 {
+  font-size: 3.5rem;
+}
+
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translate(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: #eff7fa;
+}
+.features .icon-holder .icon {
+  color: #33d1cc;
+}
+.features .feat h4 {
+  color: #ffc400;
+}
+
+.our-work {
+  background-color: #eff7fa;
+}
+.our-work ul .active {
+  background-color: #ff3150;
+  color: #ffc400;
+}
+.our-work ul li {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: #ff3150;
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box:before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(51, 209, 204, 0.4392156863);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
 }/*# sourceMappingURL=bondi.css.map */
