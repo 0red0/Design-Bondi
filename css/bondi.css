@@ -113,4 +113,22 @@ body {
 }
 .our-work .box:hover::before {
   transform: translateX(0);
+}
+
+.stuff .description {
+  max-width: 500px;
+}
+
+.team {
+  background-color: #eff7fa;
+}
+.team h2 {
+  color: #ffc400;
+}
+.team .box h4 {
+  background-color: #33d1cc;
+}
+
+.project {
+  background-color: #19283f;
 }/*# sourceMappingURL=bondi.css.map */

@@ -1,0 +1,17 @@
+.stuff {
+   .description {
+      max-width: 500px;
+   }
+}
+.team {
+   background-color: $section-color;
+   h2 {
+      color: $yellow-color;
+   }
+   .box h4 {
+      background-color: $green-color;
+   }
+}
+.project {
+   background-color: $dark-color;
+}
