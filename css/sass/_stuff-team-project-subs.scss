@@ -1,0 +1,35 @@
+.stuff {
+   .description {
+      max-width: 500px;
+   }
+}
+.team {
+   background-color: $section-color;
+   h2 {
+      color: $yellow-color;
+   }
+   .box h4 {
+      background-color: $green-color;
+   }
+}
+.project {
+   background-color: $dark-color;
+}
+.subscribe {
+   background-color: $yellow-color;
+   input[type="text"] {
+      border: none;
+      border-bottom: 1px solid #fff;
+      &:focus {
+         outline: none;
+      }
+      &::placeholder {
+         color: #fff;
+      }
+   }
+   input[type="submit"] {
+      background-color: $dark-color;
+      color: $yellow-color;
+      padding: 10px 50px;
+   }
+}
