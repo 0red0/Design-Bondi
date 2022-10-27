@@ -1,4 +1,4 @@
-Compelet page design in HTML, SASS, Javascript.
+Complete page design in HTML, SASS, Javascript.
 <br>
 Fully responsive.
 <br>
